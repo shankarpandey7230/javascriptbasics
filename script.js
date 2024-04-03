@@ -334,3 +334,104 @@
 //   }
 //   console.log(i);
 // }
+
+// JAVASCRIPT SPECIFIC ARRAYS LOOPS
+
+// 1. for/of
+
+// const fruits = ['banana', 'apple', 'orange', 'mango'];
+// console.log(fruits);
+
+// const upperFruits = [];
+// for (let item of fruits) {
+//   upperFruits.push(item.toUpperCase());
+//   //   console.log(item);
+// }
+// console.log(upperFruits);
+// console.log(fruits);
+
+// For Loop
+
+// for (let i = 0; i < fruits.length; i++) {
+//   console.log(i, fruits[i]);
+// }
+
+// FOR EACH
+
+// fruits.forEach((item, index) => {
+//   console.log(index, item);
+// });
+
+// const newData = fruits.forEach((item, index) => {
+//   console.log(index, item);
+// });
+// console.log(newData);
+
+// // MAP Loop in Array
+// The map() method of array instances creates a new array populated with the results of calling a provided function on every element in the calling array.
+
+// const newData = fruits.map((item, index) => {
+//   //   console.log(item, index);
+//   //   return 'Shankar';
+//   //   return 'SKU-' + item.toUpperCase();
+//   if (item.includes('n')) {
+//     return item;
+//   }
+// });
+
+// Filter Array: The filter method of Iterator instances returns a new iterator helper that yields only those elements of the iterator for which the provided callback function returns true.
+// const newData = fruits.filter((item, index) => {
+//   return item.includes('n');
+
+//   console.log(item, index);
+//   if (item.includes('n')) {
+//     return true;
+//   } else {
+//     return false;
+//   }
+// });
+
+// const newData = fruits.filter((item, index) => item.includes('n'));
+// console.log(newData);
+
+// Reduce Array : reduce() method of array instances execute a user supplied "reducer" callback function on each element of array, in order, passing in the return value from the calculation on the preceding element. The final result of running across all elements of the array is a single value.
+
+// const array = [2, 3, 4, 56, 78, 5678, 980];
+
+// const finalArray = array.reduce((acc, curr) => acc + curr, 0);
+
+// console.log(finalArray);
+
+// Every loop : The every method of  Array instances tests whether all elements in the array pass the test  implemented by the provided function. It returns a boolean value.
+
+// const fruits = ['banana', 'apple', 'orange', 'mango'];
+// console.log(fruits);
+
+// const result = fruits.every((item) => {
+//   console.log(item);
+//   return item.includes('a');
+// });
+
+// console.log(result);
+
+// const array = [2, 3, 4, 56, 78, 5678, 980];
+
+// const result = array.every((num) => {
+//   return num > 1;
+// });
+// console.log(result);
+
+// const array = [2, 3, 4, 56, 78, 5678, 980];
+
+// // const result = array.includes('20');
+
+// // const result = array.find((item) => item === 4);
+
+// const result = array.indexOf(56);
+// console.log(result);
+
+// creation of  new array in javascript
+
+// const Arg = Array(10).fill('Shankar');
+
+// console.log(Arg);
