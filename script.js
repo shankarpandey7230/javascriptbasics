@@ -1,3 +1,11 @@
+// Javascript is a high  level, object-oriented, multi-paradigm programming language.
+// 1. high level: we do not have to worry about complex stuff like memory management
+// 2. object-oriented=based on for storing most kinds of data
+// 3.multi-paradigm: can use different style fo programming such as imperative and declarative styles
+
+// JAvascript ROle: HTML responsible for content CSS responsible for presentation of the webpage
+// Javascript: real programming language to add dynamic effects in web application
+
 // // console.log('Hello Shankar ');
 // // alert('Shankar ');
 // // var let const
@@ -15,6 +23,12 @@
 
 // // degree = 'PHD';
 // // console.log(degree);
+// let x = 10 + 5; //15
+// x += 10;
+// x*= 4;
+// x++;
+// x--;
+// console.log(x);
 
 // // Javascript Operators
 // 1.Arithematic Operators
@@ -54,6 +68,10 @@
 // console.log(val);
 
 // COMPARISION OPERATORS
+
+// let x, y;
+// x = y = 25 - 10 - 5;
+// console.log(x, y);
 // = means assigning value from right operand to the left one
 // const v1 = 5;
 // const v2 = '5';

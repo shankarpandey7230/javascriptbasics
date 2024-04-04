@@ -1,7 +1,7 @@
 // 1. solution
 const arr = [];
 while (arr.length < 50) {
-  arr.push(Math.ceil(Math.random() * 100));
+  arr.push(Math.floor(Math.random() * 100) + 1);
 }
 console.log(arr);
 
@@ -34,7 +34,7 @@ console.log(sortedarray);
 // Challenge 2
 const arrunique = [];
 while (arrunique.length < 50) {
-  const r = Math.ceil(Math.random() * 100);
+  const r = Math.floor(Math.random() * 100) + 1;
   if (arrunique.indexOf(r) === -1) {
     arrunique.push(r);
   }
