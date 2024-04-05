@@ -499,3 +499,94 @@
 
 // Functions: are one of the fundamental building blocks in Javascript
 // function declarations consists of function keyword followed by the name offunction , list of parameters of the function,enclosed in paraentheses and seperated by commas, statements that define the function,enclosed in curly braces
+
+// whenever function is declared javascript will put it in global scope
+// function sayHi(name, address, code) {
+//   const message =
+//     // 'Hello   ' +
+//     // name +
+//     // '  nice start for your software developer journey from  ' +
+//     // address +
+//     // 'postal address :' +
+//     // code;
+
+//     `Hello ${name} nice to start for your software developer journey form ${address} and ${code}`;
+//   console.log(message);
+// }
+// sayHi('Shankar', 'Tasmania', 7248);
+// sayHi('Hari', 'sydney', 2220);
+
+// ES6 arrowfunction: is a compact alternative to a traditional funciton expression with some semantic differences and deliberate limitaions in usage.
+// 1. They don't have their own bindings to this, arguments aor super and should not be used as methods,
+// 2. can not be used as constructors, calling them with new will throw error(Type Error).Error
+// 3. They can not use yield within their body and cannot be created as generator function
+
+// const sayHi = (name, address, code) => {
+//   const message = `Hello ${name} nice to start for your software developer journey form ${address} and ${code}`;
+//   console.log(message);
+// };
+
+// sayHi('shankar', 'Tasmania', 7248);
+
+// const Shankar = 'a software developer who likes to code and grow every day';
+// const Gyanendra = 'from Tasmania love to code and learn new things';
+// const Shekhar = 'Practing everyday';
+
+// array will allow to list individual data
+
+// object will be used to store one data with multiple data
+
+// const person1 = {
+//   name: 'Shankar',
+//   location: 'Australia',
+//   interest: 'loves to code and learn and grow day by day',
+// };
+// const person2 = {
+//   name: 'sam',
+//   location: 'UK',
+// };
+
+// console.log(person1.name, person2.name);
+const userList = [
+  {
+    name: 'prem',
+    location: 'Sydeny',
+    career: 'founder of DC',
+    interest: 'loves coding and teaching others',
+  },
+  {
+    name: 'Sam',
+    location: 'US',
+  },
+  { name: 'William' },
+];
+
+// console.log(userList);
+
+const career = ({ career, interest }) => {
+  //   console.log(cr);
+  return `${career} and he ${interest}`;
+};
+
+const personBio = ({ name, location = 'na', ...rest }) => {
+  console.log(rest);
+  //   console.log(name, location);
+  //   Destructuring :JavaScript expression that makes it possible to unpack values from arrays, or properties from objects, into distinct variables.
+  //   const { name, location } = person;
+  let str = `${name} is from ${location} and likes to code. `;
+
+  if (rest.career) {
+    str += career(rest);
+  }
+  return str;
+  //   console.log('check ');
+};
+// const data = personBio();
+// console.log(userList[2]);
+// console.log(data);
+
+userList.forEach((item, i) => {
+  //   console.log(item, i);
+  const data = personBio(item); //object data type
+  console.log(data);
+});
