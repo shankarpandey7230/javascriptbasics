@@ -453,3 +453,49 @@
 // const Arg = Array(10).fill('Shankar');
 
 // console.log(Arg);
+
+// DATE  OBJECT: represent a single moment in time in a platform-independent format. It encapsulates an integral number that represents milliseconds since the midnight at the beginning of Jan 1, 1970 UTC(the epoch)
+
+// const today = Date();
+
+// console.log(typeof today); //string
+
+// console.log(today);
+
+// const today = new Date();
+
+// console.log(typeof today); // object
+
+// console.log(today);
+
+// const today = Date.now();
+// console.log(today); // will return timestamp which is the number of milliseconds elapsed since the epoch which is defined as the midnight at the beginning of JAN 1 , 1970 UTC.
+
+// const today = new Date('2019-9-29');
+
+// const data = today.getDate();
+
+// getDay is zero based so for sunday it will display  0 whereas for saturday it will show 6;
+// const data = today.getDay();
+// const data = today.getFullYear();
+// const data = today.getMonth(); // this method of Date instances returns the month for this date  according to local time, as a zero-based value where zero indicates the first month of the year)
+
+// const data = today.getMinutes();
+// const data = today.getMilliseconds();
+// const data = today.toLocaleDateString(); // returns a string with a language-sensitive representation of the date portion  of this date in the local timezone.
+// const data = today.toLocaleString(); // returns a string with a language-sensitive representation of this date in local timezone.
+// const data = today.toLocaleTimeString(); // returns a string with a languages sensitive representation of the time portion of this date in local timezone.
+// const data = today.toISOString(); // returns a string representing this date in date time string format a simplified format based on ISO 8601
+
+// today.setDate(today.getDate() + 10); // object
+
+// const data = today.setDate(today.getDate() + 10); // number
+// console.log(data.toLocaleString());
+
+// console.log(typeof data);number
+// console.log(typeof today); object
+
+// console.log(today.getTime());
+
+// Functions: are one of the fundamental building blocks in Javascript
+// function declarations consists of function keyword followed by the name offunction , list of parameters of the function,enclosed in paraentheses and seperated by commas, statements that define the function,enclosed in curly braces
