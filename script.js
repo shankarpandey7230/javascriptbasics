@@ -610,3 +610,27 @@
 // }
 
 // console.log('this works');
+
+// Time Scheduling in JS: Scheduling in JS is a lean and powerful interactive library that lets developers easily create timetables, calendars with events, resources tables ,task schedules, appointment lists and much more.
+
+// 1. setTimeout: global method  sets a timer which executes a function or a specified piece of code once the time expires
+// Syntax: setTimeout(code), setTimeout(code, delay);
+// a. clearTimeout :  global method to cancel a timeout previously established by calling it.If
+// it does not identify a previously established action, this method will do nothing
+
+// 2. setInterval:  method offered on Window and workerGlobalscope interfaces, repeatedly calls a function or executes a code snippet, with fixed time delay between each call. This method returns an Interval ID which uniquely identifies the interval, so we can remove later by calling ClearInterval().
+// b. ClearInterval: global method cancels a timed, repeating action which was previously establishde by a call of setInterval(). If the parameter does not identify a previously established action, this method does nothing.
+
+// console.log('I am before setTImeout');
+// const counter = setTimeout(() => {
+//   //   clearTimeout(counter);
+//   console.log('I am from inside SetTimeout');
+// }, 1000); //1s
+// clearTimeout(counter);
+// let counter = 100;
+// const countdown = setInterval(() => {
+//   console.log('Inside setTime interval', --counter);
+//   if (counter === 0) {
+//     clearInterval(countdown);
+//   }
+// }, 100);
