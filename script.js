@@ -543,50 +543,70 @@
 // };
 // const person2 = {
 //   name: 'sam',
+//   name: 'sam',
 //   location: 'UK',
 // };
 
 // console.log(person1.name, person2.name);
-const userList = [
-  {
-    name: 'prem',
-    location: 'Sydeny',
-    career: 'founder of DC',
-    interest: 'loves coding and teaching others',
-  },
-  {
-    name: 'Sam',
-    location: 'US',
-  },
-  { name: 'William' },
-];
+// const userList = [
+//     {
+//       name: 'prem',
+//       location: 'Sydeny',
+//       career: 'founder of DC',
+//       interest: 'loves coding and teaching others',
+//     },
+//     {
+//       name: 'Sam',
+//       location: 'US',
+//     },
+//     { name: 'William' },
+//   ];
 
-// console.log(userList);
+//   // console.log(userList);
 
-const career = ({ career, interest }) => {
-  //   console.log(cr);
-  return `${career} and he ${interest}`;
-};
+//   const career = ({ career, interest }) => {
+//     //   console.log(cr);
+//     return `${career} and he ${interest}`;
+//   };
 
-const personBio = ({ name, location = 'na', ...rest }) => {
-  console.log(rest);
-  //   console.log(name, location);
-  //   Destructuring :JavaScript expression that makes it possible to unpack values from arrays, or properties from objects, into distinct variables.
-  //   const { name, location } = person;
-  let str = `${name} is from ${location} and likes to code. `;
+//   const personBio = ({ name, location = 'na', ...rest }) => {
+//     console.log(rest);
+//     //   console.log(name, location);
+//     //   Destructuring :JavaScript expression that makes it possible to unpack values from arrays, or properties from objects, into distinct variables.
+//     //   const { name, location } = person;
+//     let str = `${name} is from ${location} and likes to code. `;
 
-  if (rest.career) {
-    str += career(rest);
-  }
-  return str;
-  //   console.log('check ');
-};
-// const data = personBio();
-// console.log(userList[2]);
-// console.log(data);
+//     if (rest.career) {
+//       str += career(rest);
+//     }
+//     return str;
+//     //   console.log('check ');
+//   };
+//   // const data = personBio();
+//   // console.log(userList[2]);
+//   // console.log(data);
 
-userList.forEach((item, i) => {
-  //   console.log(item, i);
-  const data = personBio(item); //object data type
-  console.log(data);
-});
+//   userList.forEach((item, i) => {
+//     //   console.log(item, i);
+//     const data = personBio(item); //object data type
+//     console.log(data);
+//   });
+
+// JS Error Handling: try catch statement marks a block of statements to try and specifies one or more responses should an exception be thrown, if an exception is thrown , the try catch statement catches it
+
+// console.log(first);
+
+// try {
+//   // codewitherro
+//   //   console.log(first); // once it catches error it will not execute the code after this line
+//   throw new Error('hacked');
+// } catch (error) {
+//   console.log(error); //notification to engineers
+//   if (error.message === 'hacked') {
+//     console.log('emergency alert to engineers');
+//   }
+// } finally {
+//   console.log('this block of code will always run');
+// }
+
+// console.log('this works');
