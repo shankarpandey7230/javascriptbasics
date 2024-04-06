@@ -41,34 +41,60 @@
 // }
 // console.log(arrunique);
 
-// DATE Challenge
+// // DATE Challenge
 
-const checkdate = (food, date) => {
-  const today = new Date();
-  const expired = new Date(date);
-  const result = expired.getTime() - today.getTime(); // will give a number a timestamp
-  // console.log(typeof result);
+// const checkdate = (food, date) => {
+//   const today = new Date();
+//   const expired = new Date(date);
+//   const result = expired.getTime() - today.getTime(); // will give a number a timestamp
+//   // console.log(typeof result);
 
-  // console.log(today);
+//   // console.log(today);
 
-  const expiry = Math.floor(Math.abs(result / (1000 * 60 * 60 * 24)));
-  if (expiry <= 24 && expiry <= 0) {
-    return console.log(`You have ${food} to expire within  a day`);
-  }
-  // console.log(expiry);
+//   const expiry = Math.floor(Math.abs(result / (1000 * 60 * 60 * 24)));
+//   if (expiry <= 24 && expiry <= 0) {
+//     return console.log(`You have ${food} to expire within  a day`);
+//   }
+//   // console.log(expiry);
 
-  if (result < 0) {
-    return console.log(`${food} is expired ${expiry} days ago`);
-  } else {
-    return console.log(`You got ${expiry} days to use ${food}`);
-  }
+//   if (result < 0) {
+//     return console.log(`${food} is expired ${expiry} days ago`);
+//   } else {
+//     return console.log(`You got ${expiry} days to use ${food}`);
+//   }
+// };
+// checkdate('Rice', '2024-04-06 ');
+// // You have Rice to expire within a day if today is 2024-02-05
+
+// // calling
+// const data1 = Date(checkdate('Cabbage', '2024-04-01'));
+// console.log(data1); // Cabbage is expired 4 days ago
+
+// const data2 = Date(checkdate('Banana', '2024-04-13'));
+// console.log(data2); // You have 7 days to use Banana
+
+// BMI Challenge:
+const mark = {
+  fullName: 'Mark Miller',
+  mass: 78,
+  height: 1.69,
+  calcBMI: function () {
+    this.bmi = this.mass / this.height ** 2;
+    return this.bmi;
+  },
 };
-checkdate('Rice', '2024-04-06 ');
-// You have Rice to expire within a day if today is 2024-02-05
 
-// calling
-const data1 = Date(checkdate('Cabbage', '2024-04-01'));
-console.log(data1); // Cabbage is expired 4 days ago
+const john = {
+  fullName: 'John Smith',
+  mass: 92,
+  height: 1.95,
+  calcBMI: function () {
+    this.bmi = this.mass / this.height ** 2;
+    return this.bmi;
+  },
+};
 
-const data2 = Date(checkdate('Banana', '2024-04-13'));
-console.log(data2); // You have 7 days to use Banana
+mark.calcBMI();
+john.calcBMI();
+
+console.log(mark.bmi, john.bmi);
