@@ -30,6 +30,13 @@
 //   }
 // });
 // console.log(sortedarray);
+// const uniqueArr = [];
+// for (let i = 0; i < arg.length; i++) {
+//   if (!uniqueArr.includes(arg[i])) {
+//     uniqueArr.push(arg[i]);
+//   }
+// }
+// console.log(uniqueArr);
 
 // // Challenge 2
 // const arrunique = [];
