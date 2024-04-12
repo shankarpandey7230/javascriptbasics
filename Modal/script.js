@@ -12,10 +12,10 @@ const modal = document.querySelector('.modal');
 //   overlay.classList.remove('hidden');
 // };
 
-const modalClose = () => {
-  modal.classList.add('hidden');
-  overlay.classList.add('hidden');
-};
+// const modalClose = () => {
+//   modal.classList.add('hidden');
+//   overlay.classList.add('hidden');
+// };
 
 const toggleModal = () => {
   modal.classList.toggle('hidden');
@@ -32,6 +32,7 @@ openBtns.forEach((element) => {
 document.addEventListener('keydown', (e) => {
   //   console.log(e.key);
   if (e.key === 'Escape' && !modal.classList.contains('hidden')) {
-    modalClose();
+    modal.classList.add('hidden');
+    overlay.classList.add('hidden');
   }
 });
